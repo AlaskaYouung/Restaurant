@@ -1,0 +1,88 @@
+<head>
+    <title>Ресторан "PleasureInside"</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <div class="grid">
+        <div class="grid-item grid-item1">
+        <a id="itext">Pleasure Inside </a>
+		<a id="itext">  </a>
+            <!-- begin: dropdownmenu -->	
+		 <div class="dropdown">
+			<button class="dropbtn" onclick="myFunction()">Menu</button>
+			 <div class="dropdown-content" id="myDropdown">
+				<a href="#">Акции дня</a>
+                <a href="#">Закуски</a>
+				<a href="#">Горячие блюда</a>
+				<a href="#">Холодные блюда</a>
+				<a href="#">Напитки</a>
+				<a href="#">Десерты</a>
+               
+			</div>
+		</div>
+		<!-- end: dropdownmenu -->
+
+
+
+        </div>
+        <div class="grid-item grid-item2">
+            <img src="d.jpg" alt="директор" class="card__img">
+            <div class="director">
+                <h3>Директор ресторана:</h3>
+                <p> Экспозито Эстер</p>
+                <p> Номер телефона директора:</p>
+                <p> +79047846934</p>
+                <p> Электронная почта:</p>
+                <p> aspos@mail.ru</p>
+            </div>
+            <img src="shef.jpg" alt="Шеф-повар" class="card__img">
+            <div class="shefy">
+                <p>Шеф-повар:</p>
+                <p>Ирландо Харфер</p>
+
+            </div>
+            
+        </div>
+        <div class="grid-item grid-item3">
+            <div class="priv">
+                <p>Добро пожаловать на сайт нашего ресторана!</p>
+                <p>Мы рады приветствовать вас здесь и приглашаем вас насладиться уютной атмосферой, изысканной кухней и великолепным обслуживанием. Приглашаем вас познакомиться с нашим меню, акциями и событиями, </p>
+                    которые мы проводим для наших гостей. Надеемся, что ваше посещение нашего ресторана
+                   будет незабываемым и приятным!</p>
+
+            </div>
+            <img src="drink.jpg" alt="drink" class="card__img">
+            <img src="drink1.jpg" alt="drink" class="card__img">
+            
+
+        </div>
+        
+
+        
+        <div class="grid-item grid-item5">
+            <p> Электронная почта: PleasureInside@mail.ru</p>
+            <p> Номер ресторана: 345-567-450</p>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        /* При нажатии на кнопку происходит изменение CSS-свойств выпадающего меню*/
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        // Скрытие меню при нажатии клавишей мыши не в области меню
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+        </script>
+</body>
